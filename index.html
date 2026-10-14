@@ -8,79 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@500;700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet" />
-  <style>
-    :root {
-      --bg: #f4efe6;
-      --ink: #1c1915;
-      --muted: #6b645a;
-      --line: #d9d0c4;
-      --light: #c9a36a;
-    }
-    * { box-sizing: border-box; }
-    html, body { margin: 0; padding: 0; }
-    body {
-      min-height: 100vh;
-      background: var(--bg);
-      color: var(--ink);
-      font-family: "Source Sans 3", "PingFang SC", "Hiragino Sans GB", sans-serif;
-      line-height: 1.6;
-    }
-    .wrap {
-      max-width: 720px;
-      margin: 0 auto;
-      padding: 72px 24px 64px;
-    }
-    header { margin-bottom: 72px; }
-    .brand-en {
-      letter-spacing: 0.28em;
-      text-transform: uppercase;
-      font-size: 12px;
-      color: var(--muted);
-      margin: 0 0 12px;
-    }
-    h1 {
-      font-family: "Noto Serif SC", "Songti SC", serif;
-      font-weight: 700;
-      font-size: clamp(40px, 8vw, 64px);
-      line-height: 1.15;
-      margin: 0 0 20px;
-    }
-    .tagline {
-      font-family: "Noto Serif SC", "Songti SC", serif;
-      font-size: 20px;
-      margin: 0 0 8px;
-    }
-    .tagline-en {
-      margin: 0;
-      color: var(--muted);
-      font-size: 15px;
-    }
-    section { padding: 28px 0; border-top: 1px solid var(--line); }
-    h2 {
-      font-size: 13px;
-      letter-spacing: 0.16em;
-      text-transform: uppercase;
-      color: var(--muted);
-      margin: 0 0 12px;
-      font-weight: 600;
-    }
-    p { margin: 0 0 12px; }
-    p:last-child { margin-bottom: 0; }
-    a { color: var(--ink); }
-    a:hover { color: #8a6a35; }
-    .accent {
-      display: inline-block;
-      width: 36px;
-      height: 2px;
-      background: var(--light);
-      margin-bottom: 28px;
-    }
-    footer {
-      margin-top: 8px;
-      color: var(--muted);
-      font-size: 13px;
-    }
-  </style>
+  <link rel="stylesheet" href="site.css" />
 </head>
 <body>
   <div class="wrap">
@@ -99,13 +27,28 @@
     </section>
 
     <section>
+      <h2>Company</h2>
+      <ul class="facts">
+        <li><span>名称</span>北京溯光而行科技有限公司</li>
+        <li><span>地址</span>北京市通州区潞城镇兴潞路301号院2号楼962室</li>
+        <li><span>邮箱</span><a href="mailto:hello@lumawayai.com">hello@lumawayai.com</a></li>
+        <li><span>网站</span>lumawayai.com</li>
+      </ul>
+    </section>
+
+    <section>
       <h2>Contact</h2>
-      <p>邮箱 <a href="mailto:hello@lumawayai.com">hello@lumawayai.com</a></p>
-      <p>域名 lumawayai.com</p>
+      <p>商务与媒体请写 <a href="mailto:hello@lumawayai.com">hello@lumawayai.com</a>。</p>
     </section>
 
     <footer>
       <p>© 2026 北京溯光而行科技有限公司</p>
+      <p>北京市通州区潞城镇兴潞路301号院2号楼962室</p>
+      <p class="foot-links">
+        <a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener">京ICP备2026067930号-1</a>
+        <a href="privacy.html">隐私政策</a>
+        <a href="terms.html">使用条款</a>
+      </p>
     </footer>
   </div>
 </body>
