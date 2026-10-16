@@ -1,0 +1,134 @@
+:root {
+  --bg: #f4efe6;
+  --ink: #1c1915;
+  --muted: #6b645a;
+  --line: #d9d0c4;
+  --light: #c9a36a;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body {
+  min-height: 100vh;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: "PingFang SC", "Hiragino Sans GB", "Songti SC", sans-serif;
+  line-height: 1.6;
+}
+.wrap {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 72px 24px 64px;
+}
+header { margin-bottom: 48px; }
+.home header { margin-bottom: 56px; }
+.brand-en {
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  font-size: 12px;
+  color: var(--muted);
+  margin: 0 0 12px;
+}
+h1 {
+  font-family: "Songti SC", "STSong", serif;
+  font-weight: 700;
+  font-size: clamp(40px, 8vw, 64px);
+  line-height: 1.15;
+  margin: 0 0 20px;
+}
+.legal h1 {
+  font-size: clamp(28px, 6vw, 40px);
+  margin-bottom: 12px;
+}
+.tagline {
+  font-family: "Songti SC", "STSong", serif;
+  font-size: 20px;
+  margin: 0 0 8px;
+}
+.tagline-en {
+  margin: 0;
+  color: var(--muted);
+  font-size: 15px;
+}
+.updated {
+  margin: 0;
+  color: var(--muted);
+  font-size: 14px;
+}
+.site-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 22px;
+  margin: 28px 0 0;
+  font-size: 12px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.site-nav a {
+  color: var(--muted);
+  text-decoration: none;
+}
+.site-nav a:hover,
+.site-nav a[aria-current="page"] {
+  color: var(--ink);
+}
+section { padding: 28px 0; border-top: 1px solid var(--line); }
+h2 {
+  font-size: 13px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin: 0 0 12px;
+  font-weight: 600;
+}
+.legal h2 {
+  font-size: 15px;
+  letter-spacing: 0.04em;
+  text-transform: none;
+  color: var(--ink);
+  margin: 28px 0 10px;
+}
+p { margin: 0 0 12px; }
+p:last-child { margin-bottom: 0; }
+ul {
+  margin: 0 0 12px;
+  padding-left: 1.2em;
+}
+li { margin: 0 0 6px; }
+a { color: var(--ink); }
+a:hover { color: #8a6a35; }
+.accent {
+  display: inline-block;
+  width: 36px;
+  height: 2px;
+  background: var(--light);
+  margin-bottom: 28px;
+}
+.facts {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.facts li {
+  display: flex;
+  gap: 16px;
+  margin: 0 0 10px;
+  align-items: baseline;
+}
+.facts span {
+  flex: 0 0 72px;
+  color: var(--muted);
+  font-size: 13px;
+}
+footer {
+  margin-top: 8px;
+  color: var(--muted);
+  font-size: 13px;
+}
+footer p { margin: 0 0 8px; }
+.foot-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 12px;
+}
+.back { margin-bottom: 32px; font-size: 14px; }
